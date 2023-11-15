@@ -33,8 +33,6 @@ class PyTorchNetwork(nn.Module):
     def forward(self, x):
         x = self.flatten(x)
         return self.linear_relu_stack(x)
-# make a hello function
-
 
 model = PyTorchNetwork()
 loss_fn = nn.CrossEntropyLoss()
