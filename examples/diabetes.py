@@ -50,4 +50,4 @@ for epoch in range(10):
         optimizer.zero_grad() 
 
         if batch % 100 == 0:
-            print(f'Epoch {epoch+1}: MSE Loss: {loss.item():.4f}')
+            print(f'Epoch {epoch+1}: MSE loss: {loss.item():.4f}')

@@ -33,6 +33,8 @@ class PyTorchNetwork(nn.Module):
     def forward(self, x):
         x = self.flatten(x)
         return self.linear_relu_stack(x)
+# make a hello function
+
 
 model = PyTorchNetwork()
 loss_fn = nn.CrossEntropyLoss()
@@ -75,6 +77,7 @@ Clone the repository and install:
 git clone https://github.com/rossheat/scorch.git
 cd scorch
 python setup.py install
+python examples/diabetes.py
 ```
 
 ## License

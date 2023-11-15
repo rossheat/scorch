@@ -16,7 +16,7 @@ class FashionMNIST(Dataset):
         label = self.labels[idx]
         return features, label
 
-data_path = "/Users/johndoe/Developer/deep_learning/scorch/examples/data/fashion_mnist"
+data_path = "/Users/johndoe/Developer/scorch/examples/data/fashion_mnist"
 train_dataset = FashionMNIST(data_path + "/train.csv")
 test_dataset = FashionMNIST(data_path + "/test.csv")
 
@@ -56,7 +56,7 @@ def train(dataloader, model, loss_fn, optimizer):
 
         if batch % 100 == 0:
             loss, current = loss.item(), (batch + 1) * len(X)
-            print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
+            print(f"Cross-Entroy loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
 
 def test(dataloader, model, loss_fn):
     size = len(dataloader.dataset)
