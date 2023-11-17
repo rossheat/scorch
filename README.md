@@ -1,6 +1,4 @@
-# Scorch: An Educational Deep Learning Library
-
-Scorch is a deep learning library created for educational purposes, made to resemble the PyTorch API. 
+I made this library to gain a better understanding of how backpropagation is used to train a neural network.
 
 ## Features
 - **Backpropagation:** Scorch supports the backpropagation algorithm, enabling models to learn from their training data.
